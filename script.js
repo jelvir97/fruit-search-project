@@ -5,7 +5,7 @@ const fruit = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackb
 
 function search(str) {
 	let results = fruit.filter(fruits => fruits.toLowerCase().includes(str))
-
+	results = results.slice(0,8);
 	return results;
 }
 
